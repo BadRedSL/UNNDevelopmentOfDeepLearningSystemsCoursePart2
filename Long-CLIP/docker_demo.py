@@ -11,8 +11,8 @@ start = datetime.datetime.now()
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model, preprocess = longclip.load("./checkpoints/longclip-B.pt", device=device)
 
-prompts = list(np.loadtxt(f"./app_volume/text/test_text.txt", dtype=str, quotechar='"'))
-image_path = f"./app_volume/img/test_image.jpg"
+prompts = list(np.loadtxt(f"../app_volume/text/test_text.txt", dtype=str, quotechar='"'))
+image_path = f"../app_volume/img/test_image.jpg"
 finish = datetime.datetime.now()
 print(f"Preparing model time: {(finish - start).total_seconds()} sec\n")
 
