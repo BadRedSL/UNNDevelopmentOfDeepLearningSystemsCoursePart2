@@ -1,0 +1,12 @@
+# Catalogs
+eval
+train
+img
+text
+.git
+
+# Files
+*.md
+*.dockerignore
+*Dockerfile
+demo.py
