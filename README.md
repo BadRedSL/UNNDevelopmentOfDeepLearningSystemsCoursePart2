@@ -7,4 +7,6 @@ Folder `/Data/` contain two subfolders with images and their promts. Long-CLIP w
 2) Download checkpoint [LongCLIP-B](https://huggingface.co/BeichenZhang/LongCLIP-B) and place it under `Long-CLIP/checkpoints/`
 3) Build docker image
 4) Mount folder /Data to /app_volume and run image
-   
+
+## Original repository
+https://github.com/beichenzbc/long-clip
