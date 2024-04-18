@@ -29,4 +29,9 @@ with torch.no_grad():
 print("Label probs:", probs)
 print(f"Best prompt: {prompts[[i for i, v in enumerate(probs[0]) if v == max(probs[0])][0]]}\n")
 finish = datetime.datetime.now()
-print(f"Process time: {(finish - start).total_seconds()} sec")
+print(f"Process time: {(finish - start).total_seconds()} sec\n")
+original_probs = np.array([6.14e-06, 1.00e+00, 1.91e-06])
+print(f"For man on snow bridge:")
+print(f"Original probs: {original_probs}")
+print(f"Is the difference insignificant?: {np.allclose(original_probs,probs, atol=0.01)}\n")
+
